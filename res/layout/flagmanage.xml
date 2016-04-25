@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/flagmanage"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#ffffff"
+	>
+	<com.ui.style.view.TopBar
+	android:layout_width="fill_parent"
+	android:layout_height="50dp"
+    />
+
+		<TextView 
+		    android:layout_marginTop="8dp"
+			android:layout_width="wrap_content"
+			android:layout_gravity="center"
+			android:gravity="center_horizontal"
+			android:text="便签管理"
+			android:textSize="20sp"
+			android:textColor="#389cff"
+			android:textStyle="bold" 
+			android:layout_height="wrap_content"/>
+
+		    <EditText 
+		    android:id="@+id/txtFlagManage"
+		    android:layout_width="350dp"
+		    android:layout_height="400dp"
+		    android:gravity="top"
+		    android:singleLine="false"
+			android:layout_marginTop="10dp"
+	   		android:layout_gravity="center_horizontal"
+	   		android:background="@drawable/button_style"
+		    />
+	<LinearLayout 
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="3"
+		>
+		<RelativeLayout android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:padding="10dp"
+		    >
+		<Button
+		    android:id="@+id/btnFlagManageDelete"
+		    android:layout_width="80dp"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginLeft="10dp"
+		    android:text="删除"
+		    android:background="@drawable/button_style"
+		    />
+		    <Button 
+			android:id="@+id/btnFlagManageEdit"
+			android:layout_width="80dp"
+		    android:layout_height="wrap_content"
+			android:layout_toLeftOf="@id/btnFlagManageDelete"
+			android:text="修改"    
+		    android:background="@drawable/button_style"
+			android:maxLength="200"
+		    />
+		</RelativeLayout>
+	</LinearLayout>	
+</LinearLayout>
